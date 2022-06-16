@@ -1,0 +1,516 @@
+body{
+    margin: 0;
+}
+
+.sideMargin{
+    margin: 0px 100px 0px 100px;
+}
+
+p{
+    color: hsl(208, 11%, 55%);
+}
+
+p, .headContainer a, .nav a{
+    font-family: 'Open Sans';
+}
+
+.headContainer a, .nav a{
+    font-size: 16px;
+}
+
+.headContainer p{
+    margin-bottom: 40px;
+}
+
+.card p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, .ready h1 {
+    font-family: Poppins;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+
+.card h2 {
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.myBtn{
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    text-decoration: none;
+}
+
+.coloredBtn{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    padding: 50px 0px 0px 0px;
+}
+
+header{
+    display: block;
+    margin-bottom: 80px;
+}
+
+.headContainer{
+    background-color: hsl(193, 100%, 96%);
+    height: 80vh;
+    display: block;
+    height: 700px;
+}
+
+.headDiv{
+    background-color: hsl(193, 100%, 96%);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.HeadtextDiv{
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    width: auto;
+}
+
+
+.headImgDiv{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width:  auto;
+
+}
+
+.card{
+    display: block;
+    padding: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 40px;
+    grid-column-gap: 20px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+    margin-bottom: 100px;
+    height: auto;
+
+}
+
+.box50 p, h2{
+    width: 95%;
+    align-self: center;
+}
+
+.box50{
+    display: grid;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px 40px 50px;
+ 
+}
+
+
+.myfooter{
+    background-color: hsl(192, 100%, 9%);
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr  1fr ;
+    grid-template-rows: auto;
+    gap: 20px 20px;
+    height: auto;
+    padding: 60px 32px 32px 32px;
+    color: white;
+    z-index: 2;
+}
+
+.myfooter a{
+    text-decoration: none;
+    color: white;
+}
+
+.myfooter a:hover{
+    text-decoration: underline;
+    color: hsl(322, 100%, 66%);
+}
+
+.myfooter li{
+    list-style-type: none;
+}
+
+
+
+.myflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.myflex img{
+    margin-right: 12px;
+}
+
+.sideMarginfooter{
+    padding: 50px 100px 50px 100px;
+}
+
+.socials a{
+    margin-right: 30px;
+    font-size: 24px;
+}
+
+.mrCenter{
+    display: grid;
+    justify-content: center;
+}
+
+.ready{
+    width: 500px;
+    height: auto;
+    border: white;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    position: relative;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+    z-index: 1;
+    top: 58px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.ready h2{
+    font-size: 40px;
+}
+
+
+
+/*
+### Primary
+
+ Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+*/
+
+@media only screen and (min-width: 480px) {
+    .sideMargin{
+        margin: 0px 24px 0px 24px;
+    }
+
+    .headDiv{
+        background-color: hsl(193, 100%, 96%);
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 60px;
+    }
+
+    .HeadtextDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .headImgDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width:  100%;
+        align-self: center;
+        margin: auto;
+    
+    }
+
+    .headImgDiv img{
+        height: auto;
+        width: 269px;
+        align-self: center;
+    }
+
+    .card{
+        display: block;
+        padding: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        margin-bottom: 100px;
+        height: auto;
+    
+    }
+
+    .box50 p, h2{
+        width: 95%;
+        align-self: center;
+    }
+    
+    .box50{
+        display: grid;
+        width: 92%;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 5px 24px 5px;
+ 
+    }
+
+    .myfooter{
+        background-color: hsl(192, 100%, 9%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px 20px;
+        height: auto;
+        padding: 60px 32px 32px 32px;
+        color: white;
+    }
+
+    .ready{
+        width: 315px;
+        height: auto;
+        border: white;
+        border-radius: 8px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        z-index: 1;
+        top: 58px;
+        padding: 20px 20px 20px 20px;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+@media only screen and (min-width: 576px) {
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .sideMargin{
+        margin: 0px 24px 0px 24px;
+    }
+
+    .headDiv{
+        background-color: hsl(193, 100%, 96%);
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 60px;
+    }
+
+    .HeadtextDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .headImgDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width:  100%;
+    
+    }
+
+    .headImgDiv img{
+        height: auto;
+        width: 269px;
+    }
+
+    .card{
+        display: block;
+        padding: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        margin-bottom: 100px;
+        height: auto;
+    
+    }
+
+    .box50 p, h2{
+        width: 95%;
+        align-self: center;
+    }
+    
+    .box50{
+        display: grid;
+        width: 92%;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 5px 24px 5px;
+        
+     
+    }
+
+    .myfooter{
+        background-color: hsl(192, 100%, 9%);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px 20px;
+        height: auto;
+        padding: 60px 32px 32px 32px;
+        color: white;
+    }
+
+    .ready{
+        width: 315px;
+        height: auto;
+        border: white;
+        border-radius: 8px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        z-index: 1;
+        top: 58px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+@media only screen and (min-width: 960px) {
+    .sideMargin{
+        margin: 0px 100px 0px 100px;
+    }
+
+    .headDiv{
+        background-color: hsl(193, 100%, 96%);
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    .HeadtextDiv{
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+    }
+
+    .headImgDiv{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width:  auto;
+    }
+
+    .headImgDiv img{
+        height: 400px;
+        width:  auto;
+    }
+
+    .card{
+        display: block;
+        padding: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 40px;
+        grid-column-gap: 20px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        margin-bottom: 100px;
+        height: auto;
+    
+    }
+
+    .box50 p, h2{
+        width: 95%;
+        align-self: center;
+    }
+    
+    .box50{
+        display: grid;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 50px 40px 50px;
+     
+    }
+
+    .myfooter{
+        background-color: hsl(192, 100%, 9%);
+        display: grid;
+        grid-template-columns: 1fr 1fr  1fr  1fr ;
+        grid-template-rows: auto;
+        gap: 20px 20px;
+        height: auto;
+        padding: 60px 32px 32px 32px;
+        color: white;
+    }
+
+    .ready{
+        width: 500px;
+        height: auto;
+        border: white;
+        border-radius: 8px;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+        z-index: 1;
+        top: 58px;
+        padding: 20px 20px 20px 20px;
+    }
+}
