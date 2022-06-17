@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6, .ready h1 {
     color: hsl(192, 100%, 9%);
 }
 
+#whitelogo{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
 
 .card h2 {
     font-family: Poppins;
