@@ -8,6 +8,7 @@ body{
 
 p{
     color: hsl(208, 11%, 55%);
+    font-size: 18px;
 }
 
 p, .headContainer a, .nav a{
@@ -45,15 +46,44 @@ h1, h2, h3, h4, h5, h6, .ready h1 {
     background-color: white;
     color: hsl(192, 100%, 9%);
     text-decoration: none;
+    box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
+
+}
+
+.myBtn:hover{
+    padding: 10px 50px 10px 50px;
+    color: grey;
 }
 
 .coloredBtn{
     background-color: hsl(322, 100%, 66%);
+    font-size: 18px;
+    font-weight: 700;
     color: white;
-    padding: 10px 40px 10px 40px;
+    padding: 15px 32px 15px 32px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 30px;
     text-align: center;
+    position: relative;
+    animation-name: ready;
+    animation-duration: 3s;  
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes ready {
+    from {top: -500px;}
+    to {top: 0px;}
+  }
+
+.coloredBtn:hover{
+    padding: 15px 40px 15px 40px;
+    background-color: hsla(322, 100%, 66%, 0.65); 
+}
+
+.coloredBtn a{
+    font-weight: 400;
+    font-family: Poppins;
 }
 
 .nav{
@@ -63,6 +93,14 @@ h1, h2, h3, h4, h5, h6, .ready h1 {
     padding: 50px 0px 0px 0px;
 }
 
+
+
+.nav img{
+    align-self: center;
+    height: 28px;
+    width: auto;
+}
+
 header{
     display: block;
     margin-bottom: 80px;
@@ -70,14 +108,18 @@ header{
 
 .headContainer{
     background-color: hsl(193, 100%, 96%);
-    height: 80vh;
+    min-height: 90vh;
     display: block;
-    height: 700px;
+    height: auto;
+    background-image: url("images/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
 }
 
 .headDiv{
-    background-color: hsl(193, 100%, 96%);
-    height: 100vh;
+
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -114,6 +156,7 @@ header{
 
 }
 
+
 .box50 p, h2{
     width: 95%;
     align-self: center;
@@ -125,7 +168,6 @@ header{
     justify-content: center;
     align-items: center;
     padding: 40px 50px 40px 50px;
- 
 }
 
 
@@ -136,7 +178,7 @@ header{
     grid-template-rows: auto;
     gap: 20px 20px;
     height: auto;
-    padding: 60px 32px 32px 32px;
+    padding: 100px 32px 32px 32px;
     color: white;
     z-index: 2;
 }
@@ -144,6 +186,7 @@ header{
 .myfooter a{
     text-decoration: none;
     color: white;
+    font-family: 'Open Sans';
 }
 
 .myfooter a:hover{
@@ -197,8 +240,9 @@ header{
     z-index: 1;
     top: 58px;
     padding: 20px 20px 20px 20px;
-}
+    position: relative;
 
+}
 
 .ready h2{
     font-size: 40px;
@@ -232,12 +276,16 @@ header{
         row-gap: 60px;
     }
 
+
+
     .HeadtextDiv{
         display: grid;
         justify-content: center;
         align-items: center;
         width: 90%;
     }
+
+    
 
     .headImgDiv{
         display: grid;
@@ -261,7 +309,7 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-row-gap: 40px;
+        grid-row-gap: 20px;
         grid-column-gap: 20px;
         border-radius: 10px 10px 10px 10px;
         box-shadow: 0 4px 8px 0 rgba(170, 170, 170, 0.2), 0 6px 20px 0 rgba(175, 174, 174, 0.19);
@@ -273,6 +321,11 @@ header{
     .box50 p, h2{
         width: 95%;
         align-self: center;
+    }
+
+    .box50 img{
+        width: 100%;
+        height: auto;
     }
     
     .box50{
@@ -318,16 +371,55 @@ header{
 }
 
 @media only screen and (max-width: 480px) {
-    
+
+    .center {
+        display: grid;
+        justify-items: center;
+    }
+
+    .center a{
+        width: 200px;
+    }
+
+    .HeadtextDiv p, .HeadtextDiv h1, .HeadtextDiv h1, .box50 h2, .box50 p{
+        text-align: center;
+        align-self: center;
+    }
+
+    .headContainer{
+        background-image: url("images/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-position: center;
+    }
+
 }
 
 @media only screen and (min-width: 576px) {
-    
+    .HeadtextDiv p, .HeadtextDiv h1, .HeadtextDiv h1, .box50 h2, .box50 p{
+        text-align: center;
+        align-self: center;
+    }
+
+    .center {
+        display: grid;
+        justify-items: center;
+    }
+
+    .center a{
+        width: 200px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
     .sideMargin{
         margin: 0px 24px 0px 24px;
+    }
+
+    .nav img {
+        align-self: center;
+        height: 18px;
+        width: auto;
     }
 
     .headDiv{
@@ -344,6 +436,20 @@ header{
         justify-content: center;
         align-items: center;
         width: 90%;
+    }
+
+    .center {
+        display: grid;
+        justify-items: center;
+    }
+
+    .center a{
+        width: 200px;
+    }
+
+    .HeadtextDiv p, .HeadtextDiv h1, .HeadtextDiv h1, .box50 h2, .box50 p{
+        text-align: center;
+        align-self: center;
     }
 
     .headImgDiv{
@@ -421,7 +527,7 @@ header{
 }
 
 @media only screen and (min-width: 768px) {
-    
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -486,6 +592,12 @@ header{
      
     }
 
+    .box50 img{
+        width: 100%;
+        height: auto;
+    }
+    
+
     .myfooter{
         background-color: hsl(192, 100%, 9%);
         display: grid;
@@ -512,5 +624,19 @@ header{
         z-index: 1;
         top: 58px;
         padding: 20px 20px 20px 20px;
+    }
+
+    .HeadtextDiv p, .HeadtextDiv h1, .HeadtextDiv h1, .box50 h2, .box50 p{
+        text-align: left;
+        align-self: flex-start;
+    }
+    
+    .center {
+        display: grid;
+        justify-items: start;
+    }
+
+    .center a{
+        width: 200px;
     }
 }
