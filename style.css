@@ -254,6 +254,10 @@ header{
     font-size: 40px;
 }
 
+#footlogo{
+    filter: invert(100%);
+}
+
 
 
 /*
