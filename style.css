@@ -281,7 +281,7 @@ header{
 
     .headDiv{
         background-color: hsl(193, 100%, 96%);
-        height: 100vh;
+        /*height: 100vh; */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
