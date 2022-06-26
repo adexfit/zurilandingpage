@@ -112,15 +112,19 @@ header{
     margin-bottom: 80px;
 }
 
+#header{
+    background-image: url("images/bg-hero-desktop.svg"); 
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-position: center;
+    background-color: hsl(193, 100%, 96%); 
+}
+
+
 .headContainer{
-    background-color: hsl(193, 100%, 96%);
     min-height: 90vh;
     display: block;
     height: auto;
-    background-image: url("images/bg-hero-desktop.svg");
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-position: center;
 }
 
 .headDiv{
@@ -280,7 +284,7 @@ header{
     }
 
     .headDiv{
-        background-color: hsl(193, 100%, 96%);
+       /* background-color: hsl(193, 100%, 96%);  */
         /*height: 100vh; */
         display: grid;
         grid-template-columns: 1fr;
@@ -590,8 +594,8 @@ header{
     }
 
     .headDiv{
-        background-color: hsl(193, 100%, 96%);
-        height: 100vh;
+        /*background-color: hsl(193, 100%, 96%);  */
+       /* height: 100vh; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
