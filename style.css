@@ -188,7 +188,7 @@ header{
     grid-template-rows: auto;
     gap: 20px 20px;
     height: auto;
-    padding: 100px 32px 32px 32px;
+    padding: 100px 100px 50px 100px; 
     color: white;
     z-index: 2;
 }
@@ -222,7 +222,7 @@ header{
 }
 
 .sideMarginfooter{
-    padding: 50px 100px 50px 100px;
+    /*padding: 50px 100px 50px 100px; */
 }
 
 .socials a{
@@ -403,10 +403,14 @@ header{
     }
 
     .headContainer{
-        background-image: url("images/bg-hero-mobile.svg");
+       /* background-image: url("images/bg-hero-mobile.svg"); */
         background-repeat: no-repeat;
         background-attachment:fixed;
         background-position: center;
+    }
+
+    #header{
+        background-image: url("images/bg-hero-mobile.svg");   
     }
 
     .myfooter{
@@ -663,7 +667,7 @@ header{
         grid-template-rows: auto;
         gap: 20px 20px;
         height: auto;
-        padding: 100px 32px 32px 32px;
+        padding: 100px 100px 50px 100px; 
         color: white;
     }
 
