@@ -239,6 +239,7 @@ header{
 
 .ready{
     width: 500px;
+    text-align: center;
     height: auto;
     border: white;
     border-radius: 8px;
