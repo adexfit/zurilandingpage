@@ -11,6 +11,11 @@ p{
     font-size: 18px;
 }
 
+footer p{
+    color: hsl(200, 4%, 85%);
+    font-size: 14px;
+}
+
 p, .headContainer a, .nav a{
     font-family: 'Open Sans';
 }
@@ -197,6 +202,7 @@ header{
     text-decoration: none;
     color: white;
     font-family: 'Open Sans';
+    font-size: 14px;
 }
 
 .myfooter a:hover{
@@ -219,10 +225,6 @@ header{
 
 .myflex img{
     margin-right: 12px;
-}
-
-.sideMarginfooter{
-    /*padding: 50px 100px 50px 100px; */
 }
 
 .socials a{
